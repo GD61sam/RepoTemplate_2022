@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47dd3afee41b2294fa4d4233e6bf5399, type: 3}
+  m_Name: Character_Attributes
+  m_EditorClassIdentifier: 
+  Health: 100
+  IsHurtThreshold: 25
+  MovementSpeed: 10
+  AccelerationSpeed: 10
+  SprintSpeed: 15
+  IsHurtSpeed: 8
+  TurnSpeed: 10
+  TurnSpeedMultiplier: 1
+  JumpHeight: 2
+  JumpAmounts: 2
+  Gravity: 10
+  AirControl: 0.1
+  AirTurning: 1
+  GroundCheckRadius: 0.25
+  GroundCheckStartHeight: 0.5
+  GroundCheckEndHeight: 0.1
+  GroundCheckMask:
+    serializedVersion: 2
+    m_Bits: 1

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 349cd9cd1228f664d9967bf21d7798fb, type: 3}
+  m_Name: VolumeVoice
+  m_EditorClassIdentifier: 
+  _name: VolumeVoice
+  _default: 75
+  _audioMixer: {fileID: 24100000, guid: 0b29bbe04457af74c9a6d313f93feea2, type: 2}
+  _parameterName: VolumeVoice
