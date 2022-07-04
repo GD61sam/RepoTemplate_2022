@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2644859476732214603
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25,9 +25,10 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7065415782831299865}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.9106295, y: 2.9106295, z: 2.9106295}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 73642329612471578}
   - {fileID: 8647594276955647484}
@@ -105,6 +106,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6785505745708822989}
   - {fileID: 1574454051159625480}
@@ -417,7 +419,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8788234355298486528, guid: 2659859f9db242b4aa9a019dade156f7, type: 3}
       propertyPath: m_text
-      value: Warning Text
+      value: 'Starting a new game will delete your old saved game.
+
+        Would
+        you like to continue?'
       objectReference: {fileID: 0}
     - target: {fileID: 8788234355298486528, guid: 2659859f9db242b4aa9a019dade156f7, type: 3}
       propertyPath: m_fontSize
@@ -670,7 +675,7 @@ PrefabInstance:
     - target: {fileID: 7770241383091102481, guid: 44c93b1981637454580d6da553f52ab0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 5731541260803138915}
+      objectReference: {fileID: 0}
     - target: {fileID: 7770241383091102481, guid: 44c93b1981637454580d6da553f52ab0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 

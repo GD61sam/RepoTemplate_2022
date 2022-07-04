@@ -7,9 +7,11 @@ using UnityEngine.Rendering.Universal;
 [CreateAssetMenu(menuName = ("Scriptable Object / Setting Configuration / Gamma"))]
 public class GammaSetting : FloatSetting
 {
+    //SERIALIZED VAULES-----------------------------------
     [Header("Gamma")]
     [SerializeField] private VolumeProfile _volumeProfile;
 
+    //CUSTOM METHODS -------------------------------------
     public override void SetValue(float newValue)
     {
         base.SetValue(newValue);

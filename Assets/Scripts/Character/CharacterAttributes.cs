@@ -1,3 +1,4 @@
+//PROPERTY OF SAM MCKINNEY - 2022
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,20 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = ("Scriptable Object / Attributes / Character"))]
 public class CharacterAttributes : ScriptableObject
 {
-    #region(TITLES)
-    //SERIALIZED FIELDS------------------------
-    //PRIVATE VARIABLES------------------------
-    //PROTECTED VARIABLES----------------------
     //PUBLIC VARIABLES-------------------------
-    //PROPERTIES-------------------------------
-    //UNITY METHODS----------------------------
-    //CUSTOM METHODS---------------------------
-    #endregion
-
-    [Header("Health")]
-    public float Health = 100;
-    public float IsHurtThreshold = 25;
-
     [Header("Movement")]
     public float MovementSpeed = 10;
     public float AccelerationSpeed = 5;

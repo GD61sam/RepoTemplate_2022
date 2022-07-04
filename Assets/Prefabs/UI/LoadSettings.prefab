@@ -49,10 +49,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e904f7b1df952d7468b89c306ff6b9c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _toLoad:
+  _toLoadFloat:
   - {fileID: 11400000, guid: f93c5d5015df5284e81c228f9a82d5ef, type: 2}
   - {fileID: 11400000, guid: d5b853db9e402d24cbab4c846e118a4d, type: 2}
-  - {fileID: 11400000, guid: 90908854ac358b049afd2748ecdfbbc4, type: 2}
   - {fileID: 11400000, guid: 1e7ca78295f80b6468bc2305e4b58cd6, type: 2}
+  - {fileID: 11400000, guid: 90908854ac358b049afd2748ecdfbbc4, type: 2}
   - {fileID: 11400000, guid: 4dc38d0d32dd1e740a5c30527962ef4d, type: 2}
   - {fileID: 11400000, guid: 46974203c1b0df94bbf0eaaa1872329f, type: 2}
+  _toLoadInt:
+  - {fileID: 11400000, guid: 5bb8e23392070324d87ec3ede84be825, type: 2}
+  - {fileID: 11400000, guid: 4779dafcbdfb1e84683517383fec9486, type: 2}
