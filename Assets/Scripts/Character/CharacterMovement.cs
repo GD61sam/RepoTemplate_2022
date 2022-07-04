@@ -12,7 +12,7 @@ public class CharacterMovement : MonoBehaviour
     //PUBLIC VARIABLES-------------------------   
     #endregion
     //SERIALIZED FIELDS------------------------
-    public CharacterAttributes MovementAttributes;
+    public MovementAttributes MovementAttributes;
 
     //PRIVATE VARIABLES------------------------
     private Rigidbody _rigidbody;

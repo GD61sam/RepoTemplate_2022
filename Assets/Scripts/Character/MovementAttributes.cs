@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = ("Scriptable Object / Attributes / Character"))]
-public class CharacterAttributes : ScriptableObject
+[CreateAssetMenu(menuName = ("Scriptable Object / Attributes / Movement"))]
+public class MovementAttributes : ScriptableObject
 {
     //PUBLIC VARIABLES-------------------------
     [Header("Movement")]

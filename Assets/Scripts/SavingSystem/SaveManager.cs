@@ -19,6 +19,17 @@ public class SaveManager : MonoBehaviour
         SerializationManager.Save(SaveName.text, SaveData.Current);
     }
 
+    public void CreateNewSave()
+    {
+        if(SaveName.text == "")
+        {
+            return;
+        }
+
+        OnSave();
+        GameManager.Current.LoadGame();
+    }
+
     //gets the files within the saves folder
     public void GetLoadFiles()
     {

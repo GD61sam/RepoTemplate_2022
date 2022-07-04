@@ -8,12 +8,14 @@ public class GameManager : MonoBehaviour
 {
     //SERIALIZED VAULES-----------------------------------
     [SerializeField] private GameObject _loadingScreen;
+
     //PRIVATE VALUES--------------------------------------
     private List<AsyncOperation> _scenesLoading = new List<AsyncOperation>();
     private float _totalSceneProgress;
+
     //PUBLC VALUES----------------------------------------
     public static GameManager Current;
-    //PROPERTIES------------------------------------------
+
 
     //UNITY METHODS---------------------------------------
     private void Awake()
