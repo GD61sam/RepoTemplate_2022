@@ -7,6 +7,11 @@ using UnityEngine.SceneManagement;
 public class SceneHandler : MonoBehaviour
 {
     //CUSTOM METHODS -------------------------------------
+    public void LoadGame()
+    {
+        GameManager.Current.LoadGame();
+    }
+    
     public void LoadScene(string sceneName)
     {
         Debug.Log($"Loading Scene: {sceneName}");
