@@ -11,9 +11,8 @@ public class SerializationManager : MonoBehaviour
     //SERIALIZED VAULES-----------------------------------
     //PRIVATE VALUES--------------------------------------
     //PUBLC VALUES----------------------------------------
-    //PROPERTIES------------------------------------------   
-    //UNITY METHODS---------------------------------------
-
+    //PROPERTIES------------------------------------------
+    public static string CurrentSaveName { get; private set; }
 
     //CUSTOM METHODS -------------------------------------
     public static bool Save(string saveName, object saveData)
@@ -29,7 +28,7 @@ public class SerializationManager : MonoBehaviour
         }
 
         //get a path to the saves folder and saves file location
-        string path = Application.persistentDataPath + "/saves" + saveName + ".save";
+        string path = Application.persistentDataPath + "/saves/" + saveName + ".save";
 
         //create the file at pervious made path
         FileStream file = File.Create(path);
@@ -75,6 +74,11 @@ public class SerializationManager : MonoBehaviour
             file.Close();
             return null;
         }
+    }
+
+    public static void SetSaveName(string saveName)
+    {
+        CurrentSaveName = saveName;
     }
 
     private static BinaryFormatter GetBinaryFormatter()

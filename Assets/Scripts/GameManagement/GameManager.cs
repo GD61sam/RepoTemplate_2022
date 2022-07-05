@@ -16,7 +16,6 @@ public class GameManager : MonoBehaviour
     //PUBLC VALUES----------------------------------------
     public static GameManager Current;
 
-
     //UNITY METHODS---------------------------------------
     private void Awake()
     {
@@ -36,6 +35,15 @@ public class GameManager : MonoBehaviour
         _loadingScreen.SetActive(true);
         _scenesLoading.Add(SceneManager.UnloadSceneAsync((int)EnumSceneIndexes.MainMenu));
         _scenesLoading.Add(SceneManager.LoadSceneAsync((int)EnumSceneIndexes.Gameplay, LoadSceneMode.Additive));
+
+        StartCoroutine(GetSceneLoadProgress());
+    }
+
+    public void LoadMenu()
+    {
+        _loadingScreen.SetActive(true);
+        _scenesLoading.Add(SceneManager.LoadSceneAsync((int)EnumSceneIndexes.MainMenu, LoadSceneMode.Additive));
+        _scenesLoading.Add(SceneManager.UnloadSceneAsync((int)EnumSceneIndexes.Gameplay));
 
         StartCoroutine(GetSceneLoadProgress());
     }
@@ -61,6 +69,7 @@ public class GameManager : MonoBehaviour
             }
 
             _loadingScreen.gameObject.SetActive(false);
+            _scenesLoading.Clear();
         }
     }
 }

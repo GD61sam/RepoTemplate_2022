@@ -11,6 +11,11 @@ public class SceneHandler : MonoBehaviour
     {
         GameManager.Current.LoadGame();
     }
+
+    public void LoadMenu()
+    {
+        GameManager.Current.LoadMenu();
+    }
     
     public void LoadScene(string sceneName)
     {

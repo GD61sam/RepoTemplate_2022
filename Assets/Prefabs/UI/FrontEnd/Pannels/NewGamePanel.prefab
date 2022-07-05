@@ -477,7 +477,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7986840528903634122}
   - component: {fileID: 7986840528903634123}
-  - component: {fileID: 6532338138606587867}
   m_Layer: 5
   m_Name: NewGamePanel
   m_TagString: Untagged
@@ -535,20 +534,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &6532338138606587867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7986840528903634125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a6bd555274fcd44a98c8820f8554576, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SaveName: {fileID: 8992138919545890756}
-  SaveFiles: []
 --- !u!1 &8643770077836532899
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,7 +807,7 @@ PrefabInstance:
     - target: {fileID: 7770241383091102481, guid: 44c93b1981637454580d6da553f52ab0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 6532338138606587867}
+      objectReference: {fileID: 0}
     - target: {fileID: 7770241383091102481, guid: 44c93b1981637454580d6da553f52ab0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 

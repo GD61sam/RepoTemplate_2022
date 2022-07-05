@@ -13,8 +13,8 @@ public class PlayerController : MonoBehaviour
 
     //PRIVATE VARIABLES------------------------
     private CharacterMovement _characterMovement;
-
     private Vector3 _moveInput;
+    private Light _flashLight;
 
     //PUBLIC VARIABLES-------------------------
     public TransformEvent OnPlayerSpawned;
@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         _characterMovement = GetComponent<CharacterMovement>();
+        _flashLight = GetComponentInChildren<Light>();
 
         //add inputs and enable them
         PlayerInput input = gameObject.AddComponent<PlayerInput>();
@@ -84,6 +85,12 @@ public class PlayerController : MonoBehaviour
 
     public void OnInteract()
     {
+
+    }
+
+    public void OnFlashLight()
+    {
+        _flashLight.enabled = !_flashLight.enabled;
     }
 
     //CUSTOM METHODS---------------------------

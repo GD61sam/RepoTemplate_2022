@@ -441,6 +441,34 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4211960169763727423, guid: db3a699a2d6540c43980d20cfa6baa73, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211960169763727423, guid: db3a699a2d6540c43980d20cfa6baa73, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211960169763727423, guid: db3a699a2d6540c43980d20cfa6baa73, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2340916989906396751}
+    - target: {fileID: 4211960169763727423, guid: db3a699a2d6540c43980d20cfa6baa73, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211960169763727423, guid: db3a699a2d6540c43980d20cfa6baa73, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211960169763727423, guid: db3a699a2d6540c43980d20cfa6baa73, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211960169763727423, guid: db3a699a2d6540c43980d20cfa6baa73, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4887554648013724705, guid: db3a699a2d6540c43980d20cfa6baa73, type: 3}
       propertyPath: m_Name
       value: PausePannel
@@ -507,6 +535,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db3a699a2d6540c43980d20cfa6baa73, type: 3}
+--- !u!114 &2340916989906396751 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3671929380527681079, guid: db3a699a2d6540c43980d20cfa6baa73, type: 3}
+  m_PrefabInstance: {fileID: 1335822827007248504}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5863087232051237977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5a63f2aa8a30f4c93bef1f5bd1dcec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &4579156117100383121 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3244181568552649705, guid: db3a699a2d6540c43980d20cfa6baa73, type: 3}
