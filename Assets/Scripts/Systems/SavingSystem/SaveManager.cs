@@ -73,6 +73,7 @@ public class SaveManager : MonoBehaviour
         SaveFiles = Directory.GetFiles(Application.persistentDataPath + "/saves/");
     }
 
+    //clears the loaded files 
     private void ClearDisplayedLoadFiles()
     {
         for (int i = _filePrefabs.Count; i > 0; i--)
@@ -84,6 +85,7 @@ public class SaveManager : MonoBehaviour
         _filePrefabs.Clear();
     }
 
+    //displays loaded files to UI
     public void DisplaySaveFileOptions()
     {
         //displays saves option
@@ -91,6 +93,7 @@ public class SaveManager : MonoBehaviour
             //delete save
     }
 
+    //deletes a save
     public void DeleteSave()
     {        
         //get a path to the saves folder and saves file location
@@ -102,6 +105,7 @@ public class SaveManager : MonoBehaviour
         Return();
     }
 
+    //loads a game from loaded files
     public void LoadSavedGame()
     {
         //loads saved game

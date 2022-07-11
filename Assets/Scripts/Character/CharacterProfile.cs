@@ -3,15 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = ("Scriptable Object / Profile / Character"))]
+//[CreateAssetMenu(menuName = ("Scriptable Object / Profile / Character"))]
 [System.Serializable]
-public class CharacterProfile : ScriptableObject
+public class CharacterProfile
 {
     //SERIALIZED VAULES-----------------------------------
     //PRIVATE VALUES--------------------------------------
     //PUBLC VALUES----------------------------------------
     public string Name;
-    public Sprite Icon;
 
     public float Level;
 

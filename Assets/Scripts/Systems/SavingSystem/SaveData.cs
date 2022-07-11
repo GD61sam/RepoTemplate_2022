@@ -25,7 +25,7 @@ public class SaveData
     }
 
     //create resouces here
-
+    public CharacterProfile PlayerProfile = new CharacterProfile();
 
     //PROPERTIES------------------------------------------       
     //UNITY METHODS---------------------------------------

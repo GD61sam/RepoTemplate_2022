@@ -33,8 +33,8 @@ public class PlayerController : MonoBehaviour
         input.actions.Enable();
 
         OnPlayerSpawned?.Invoke(transform);
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
 
     }
 
