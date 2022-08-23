@@ -18,9 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Gameplay.unity
     guid: 26e6bc3f795f02d45a6e4cf2ff782ff8
   - enabled: 1
-    path: Assets/Scenes/ProgrammingGym.unity
+    path: Assets/Scenes/Gyms/ProgrammingGym.unity
     guid: 4dbb3e458ad37f6468a34ace1afb789c
   - enabled: 1
-    path: Assets/Scenes/ArtGym.unity
+    path: Assets/Scenes/Gyms/ArtGym.unity
     guid: dbd798e2a38559549bf595b144d33690
   m_configObjects: {}

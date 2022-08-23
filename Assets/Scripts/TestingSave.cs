@@ -19,7 +19,7 @@ public class TestingSave : MonoBehaviour
     public void Add()
     {
         lvl = SaveData.Current.PlayerProfile.Level += 1;
-        health = SaveData.Current.PlayerProfile.MaxHealth += 10;
+        health = SaveData.Current.PlayerProfile.CurrentHealth += 10;
 
         UpdateUI();
     }

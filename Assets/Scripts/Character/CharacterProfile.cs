@@ -13,11 +13,13 @@ public class CharacterProfile
     public string Name;
 
     public float Level;
-
     
-    public float MaxHealth;
-    public float MaxManna;
-    public float MaxStamina;
+    public float CurrentHealth;
+    public float CurrentManna;
+    public float CurrentStamina;
+
+    //public Vector3 CurrentPosition;
+    //public Quaternion CurrentRotation;
 
     //PROPERTIES------------------------------------------
        

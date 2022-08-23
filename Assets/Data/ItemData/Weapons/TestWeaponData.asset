@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe583485a195292469cfe6e99a1da0b0, type: 3}
+  m_Name: TestWeaponData
+  m_EditorClassIdentifier: 
+  Name: Name
+  Icon: {fileID: 0}
+  ItemType: 0
+  Description: Description
+  Prefab: {fileID: 0}
+  MaxStackSize: 10
+  Weight: 1
+  Value: 10
+  DurabilityMax: 100
+  Damage: 2.55
+  Speed: 3.03

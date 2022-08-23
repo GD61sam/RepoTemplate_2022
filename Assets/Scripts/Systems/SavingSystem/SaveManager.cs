@@ -46,6 +46,7 @@ public class SaveManager : MonoBehaviour
         for (int i = 0; i < SaveFiles.Length; i++)
         {
             GameObject loadFilePrefab = Instantiate(_fileButtonPrefab);
+            _filePrefabs.Add(loadFilePrefab);
             loadFilePrefab.transform.SetParent(_loadArea.transform, false);
 
             loadFilePrefab.GetComponentInChildren<TextMeshProUGUI>().text = SaveFiles[i].Replace(Application.persistentDataPath + "/saves/", "");
@@ -54,7 +55,8 @@ public class SaveManager : MonoBehaviour
             {
                 index = i;
 
-                DisplaySaveFileOptions();
+                LoadSavedGame();
+                //DisplaySaveFileOptions();
                 
             });
         }
@@ -76,7 +78,7 @@ public class SaveManager : MonoBehaviour
     //clears the loaded files 
     private void ClearDisplayedLoadFiles()
     {
-        for (int i = _filePrefabs.Count; i > 0; i--)
+        for (int i = _filePrefabs.Count - 1; i > -1; i--)
         {
             Destroy(_filePrefabs[i]);
             _filePrefabs.RemoveAt(i);

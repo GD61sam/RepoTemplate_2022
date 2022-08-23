@@ -1,3 +1,4 @@
+//PROPERTY OF SAM MCKINNEY - 2022
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,14 +6,18 @@ using UnityEngine.Events;
 
 public class InteractionManager : MonoBehaviour
 {
-    public InteractionManager Current;
+    //PUBLC VALUES----------------------------------------
+    public static InteractionManager Current;
+    public InteractableObjectData CurrentInteractableData;
+    public bool PlayerCanInteract = true;
 
-    public GameObject CurrentInteractable;
-    public bool PlayerCanInteract;
+    //EVENTS----------------------------------------------
+    public UnityEvent<bool> OnUpdateUI;
 
+    //UNITY METHODS---------------------------------------
     private void Awake()
     {
-        if(Current != null || Current != this)
+        if(Current != null && Current != this)
         {
             Destroy(this);
         }
@@ -20,36 +25,45 @@ public class InteractionManager : MonoBehaviour
         Current = this;
     }
 
-    //check if interaction is allowed
-    public void TryAcknowledgeInteraction(GameObject interactable)
+    //CUSTOM METHODS -------------------------------------
+    public void TryAwknowledgePossibleInteraction(InteractableObjectData InteractionData)
     {
         //check if player is able to interact with an object
         if (PlayerCanInteract == false) return;
 
-        //check if manager is already interacting with an object
-        if (CurrentInteractable != null) return;
+        //check if current interactable is null
+        if(CurrentInteractableData != null)
+        {
+            //if our new object has a lower weight return
+            if (InteractionData.Weight < CurrentInteractableData.Weight) return;
+        }
 
-        AcknowledgeInteraction(interactable);
+        AwkknowledgePossibleInteraction(InteractionData);
     }
 
-    //if player is able to interact and is not already interacting with object
-    //then allow interaction
-    private void AcknowledgeInteraction(GameObject interactable)
+    private void AwkknowledgePossibleInteraction(InteractableObjectData InteractionData)
     {
-        CurrentInteractable = interactable;
-
-        UpdateUI();
+        CurrentInteractableData = InteractionData;
+        UpdateUI(true);
     }
 
-    public void UpdateUI()
+    public void UpdateUI(bool isEnabled)
     {
-
+        OnUpdateUI.Invoke(isEnabled);
     }
 
     public void StopAcknowledgingInteraction()
     {
-        CurrentInteractable = null;
+        CurrentInteractableData = null;
+        UpdateUI(false);
+    }
 
-        UpdateUI();
+    public bool TryInteract(InteractableObjectData InteractionData)
+    {
+        //Checks
+        if (PlayerCanInteract == false) return false;
+        if (CurrentInteractableData != InteractionData) return false;
+
+        return true;
     }
 }

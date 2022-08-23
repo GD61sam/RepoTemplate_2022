@@ -86,6 +86,9 @@ public class PlayerController : MonoBehaviour
     public void OnInteract()
     {
 
+        if (InteractionManager.Current.CurrentInteractableData == null) return;
+
+        InteractionManager.Current.CurrentInteractableData.Interactable.GetComponent<IInteractable>().Interact();
     }
 
     public void OnFlashLight()
